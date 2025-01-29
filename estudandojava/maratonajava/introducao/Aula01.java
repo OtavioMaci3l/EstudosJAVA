@@ -1,5 +1,7 @@
 package estudandojava.maratonajava.introducao;
 
+import org.w3c.dom.ls.LSOutput;
+
 /**
  *this is my first contact with <b>JAVA<b/>
  */
