@@ -1,4 +1,4 @@
-package estudandojava.maratonajava.revisando;
+package estudandojava.maratonajava.revisando.introducao;
 
 /*public class revisao {
     public static void main(String[] args) {
@@ -163,7 +163,7 @@ package estudandojava.maratonajava.revisando;
 }*/
 
 //dessa forma cada indice do array multidimensional ta fazendo referencia a arrays de tamanhos diferentes
-public class revisao {
+public class Revisao {
     public static void main(String[] args) {
         int[][] ai = new int[3][];
         int[][] ia = {{1,2},{3,4,5},{6,7,8,9}}; //e tem como inicializar o array multidimensional diretamente
