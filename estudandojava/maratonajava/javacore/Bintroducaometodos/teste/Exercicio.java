@@ -5,11 +5,10 @@ import estudandojava.maratonajava.javacore.Bintroducaometodos.dominio.Funcionari
 public class Exercicio {
     public static void main(String[] args) {
         Funcionario funcionario = new Funcionario();
-        funcionario.name = "rodolfo";
-        funcionario.age = 32;
-        funcionario.salario = new double[]{5100.00, 7854.00, 34980.00};
-
+        funcionario.setName("Rodolfo");
+        funcionario.setAge(32);
+        funcionario.setSalario(new double[]{5100.00, 7854.00, 34980.00});
         funcionario.imprimir();
-        funcionario.media();
+        System.out.println("\nMédia dos salários: "+funcionario.getMedia());
     }
 }

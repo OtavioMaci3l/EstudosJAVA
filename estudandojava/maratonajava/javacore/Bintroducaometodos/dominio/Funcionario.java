@@ -1,9 +1,10 @@
 package estudandojava.maratonajava.javacore.Bintroducaometodos.dominio;
 
 public class Funcionario {
-    public String name;
-    public int age;
-    public double[] salario;
+    private String name;
+    private int age;
+    private double[] salario;
+    private double media;
 
     public void imprimir() {
         System.out.println("Nome: " + this.name);
@@ -16,6 +17,7 @@ public class Funcionario {
         for (double x : this.salario) {
             System.out.print(x);
         }
+        media();
     }
 
     public void media() {
@@ -23,11 +25,35 @@ public class Funcionario {
             System.out.println("\nsalario nao informado");
             return;
         }
-        double media = 0;
         for (double x : this.salario) {
             media += x;
         }
         media = media / 3;
         System.out.println("\nMedia dos tres salarios: " + media);
+    }
+
+    //setters, atribui um valor ao atributo
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public void setSalario(double[] salario) {
+        this.salario = salario;
+    }
+
+    //getters, retorna o valor do atributo
+    public String getName() {
+        return name;
+    }
+    public int getAge() {
+        return age;
+    }
+    public double[] getSalario() {
+        return salario;
+    }
+    public double getMedia() {
+        return media;
     }
 }
