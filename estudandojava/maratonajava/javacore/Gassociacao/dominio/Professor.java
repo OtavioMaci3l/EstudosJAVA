@@ -1,21 +1,17 @@
 package estudandojava.maratonajava.javacore.Gassociacao.dominio;
 
-public class Time {
-    //UM PARA MUITOS
-
-    //atributos
+public class Professor {
+    //MUITOS PARA UM
     private String nome;
 
-    //construtor
-    public Time(String nome) {
+    public Professor(String nome) {
         this.nome = nome;
     }
 
-    //setters
     public void setNome(String nome) {
         this.nome = nome;
     }
-    //getters
+
     public String getNome() {
         return nome;
     }
