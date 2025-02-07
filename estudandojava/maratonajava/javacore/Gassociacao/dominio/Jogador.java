@@ -3,9 +3,9 @@ package estudandojava.maratonajava.javacore.Gassociacao.dominio;
 //import estudandojava.maratonajava.javacore.Fmodificadorestatico.domain.Anime;
 
 public class Jogador {
-    //UM PARA MUITOS
-
+    // UM PARA MUITOS
     // ASSOCIAÇÃO UNIDIRECIONAL já que o jogador tem referência ao time porem o time não tem referência aos jogadores;
+    // após um certo commit essa associação passou a ser uma ASSOCIAÇÃO BIDIMENSIONAL
 
     //atributos
     private String nome;
