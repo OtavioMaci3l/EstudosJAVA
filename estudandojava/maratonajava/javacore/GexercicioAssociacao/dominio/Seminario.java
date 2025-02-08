@@ -3,23 +3,24 @@ package estudandojava.maratonajava.javacore.GexercicioAssociacao.dominio;
 public class Seminario {
     //atributos
     private String nome;
+    //seminario tem um local
     private Local local;
+    //seminario tem varios alunos
     private Aluno[] alunos;
 
     //construtores
-    public Seminario() {
+
+
+    public Seminario(Local local) {
+        this.local = local;
     }
 
-    public Seminario(String nome) {
-        this.nome = nome;
-    }
-
-    public Seminario(String nome, Local local) {
+    public Seminario(Local local, String nome) {
         this.nome = nome;
         this.local = local;
     }
 
-    public Seminario(String nome, Local local, Aluno[] alunos) {
+    public Seminario(Local local, String nome, Aluno[] alunos) {
         this.nome = nome;
         this.local = local;
         this.alunos = alunos;

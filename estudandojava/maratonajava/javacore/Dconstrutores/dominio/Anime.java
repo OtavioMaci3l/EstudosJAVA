@@ -11,7 +11,7 @@ public class Anime {
     //OBS: apenas pelo abjeto ser criado o contrutor já é executao automaticamente, porem os atributos são inicializados antes memso disso
     //isso não é um metodo, isso é um contrutor, tem o exato mesmo nome da Classe
     //todos os arquivo class quando compilado recebe o contrution, pois é exencial para o funcionamento da Class
-    //public void Anime(){}, isso é um meto não um construtor, o contrutor não apresenta nenhum tipo de retorno
+    //public void Anime(){}, isso é um metodo não um construtor, o contrutor não apresenta nenhum tipo de retorno
     public Anime(String nome, String tipo, int eps, String genero){
         this(); //esse this() só pode ser executado corretamente dentro de um contrutor, ou seja, só pode chamar um contrutor dentro de outro construtor
         this.nome = nome;

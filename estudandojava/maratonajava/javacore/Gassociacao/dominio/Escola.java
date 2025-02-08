@@ -3,6 +3,7 @@ package estudandojava.maratonajava.javacore.Gassociacao.dominio;
 public class Escola {
     //MUITOS PARA UM
     private String nome;
+    // escola possui varios professores
     private Professor[] professores;
 
     public void imprime(){

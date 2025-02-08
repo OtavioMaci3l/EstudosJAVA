@@ -24,8 +24,8 @@ public class TesteSeminario {
         Local local2 = new Local("Guaxinilopoles", "Guaxinita", "Guataburgo", 498);
 
         //seminarios
-        Seminario seminario1 = new Seminario("Capivaras do Zodiaco", local1);
-        Seminario seminario2 = new Seminario("Hunting Capybaras", local2);
+        Seminario seminario1 = new Seminario(local1, "Capivaras do Zodiaco");
+        Seminario seminario2 = new Seminario(local2,"Hunting Capybaras");
 
         //alunos
         Aluno aluno1 = new Aluno("Cledosvaldo", 15, seminario1);

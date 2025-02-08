@@ -11,6 +11,7 @@ public class Jogador {
     private String nome;
     //isso é uma associação já que esta associando, linkando, uma classe com outra, agora essa variável é uma variável de refeferência que apontara para outro objeto,
     //dessa forma essa classe tem acesso às informações contidas na classe, a qual essa variavel faz referência
+    // jogador possui um time
     private Time time;
 
 //    private Anime anime; // também é possível associar a classe com classes em outros packets, contanto que o packet seja importado
