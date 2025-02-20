@@ -8,20 +8,37 @@ package estudandojava.maratonajava.javacore.Heranca.dominio;
 // Associação : tem um  // aclopa um pouco menos // tem um siginifica que o objeto está fazendo referencia a outro objeto
 // Herança    : é um    // aclopa muito o código // é um significa que o objeto está herdando, extendendo um outro objeto
 
+import java.sql.SQLOutput;
+
 // não existe herança multipla, aparentemente isso vai mudar quando chegar no conteúdo de interface
 //           funcionario  é uma  pessoa
 public class Funcionario extends Pessoa /*, Aluno */ {
 
     private double salario;
 
+    static{
+        System.out.println("dentro do bloco de inicialização static FUNCIONARIO");
+    }
+    {
+        System.out.println("dentro do bloco de inicialização1 FUNCIONARIO");
+    }
+    {
+        System.out.println("dentro do bloco de inicialização2 FUNCIONARIO");
+    }
+
     public Funcionario(String nome){
         // pela lógica, o funcionário é uma pessoa, uma pessoa obrigatóriamente precisa possuir um nome, logo teremos e "importar" o construtor da classe mãe para, para isso usamos o super()
         super(nome); //basicamente funciona da mesma forma que o this(), porem no caso do super(), ele vai procurar na classe mãe qual contrutor se encaixa com os argumentos passados
+        System.out.println("dentro do construtor funcionario");
     }
 
     // ctrl + o
     public Funcionario() {
         super();
+    }
+
+    public Funcionario(String nome, String cpf) {
+        super(nome, cpf);
     }
 
     @Override //para indicar que o metodo está sendo sobre escrito
